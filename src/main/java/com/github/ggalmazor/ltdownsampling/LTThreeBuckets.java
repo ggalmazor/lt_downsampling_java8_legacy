@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public final class LTThreeBuckets {
 
-  public static <T extends Point> List<T> sorted(List<T> input, int inputSize, int desiredBuckets) {
+  public static <T extends Point> List<T> sortedCompact(List<T> input, int inputSize, int desiredBuckets) {
     java.util.List<T> results = new ArrayList<>();
 
     OnePassBucketizer.bucketize(input, inputSize, desiredBuckets)
